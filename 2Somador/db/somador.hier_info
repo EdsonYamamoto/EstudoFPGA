@@ -1,0 +1,9 @@
+|somador
+A => S.IN0
+B => S.IN1
+C => S.IN1
+C => R.IN1
+S << S.DB_MAX_OUTPUT_PORT_TYPE
+R << R.DB_MAX_OUTPUT_PORT_TYPE
+
+

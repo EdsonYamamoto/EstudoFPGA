@@ -1,4 +1,67 @@
-|decodificador
+|circuito
+A0[0] => decodificador:decode0.A[0]
+A0[1] => decodificador:decode0.A[1]
+A0[2] => decodificador:decode0.A[2]
+A0[3] => decodificador:decode0.A[3]
+A1[0] => decodificador:decode1.A[0]
+A1[1] => decodificador:decode1.A[1]
+A1[2] => decodificador:decode1.A[2]
+A1[3] => decodificador:decode1.A[3]
+S0[0] <= decodificador:decode0.S[0]
+S0[1] <= decodificador:decode0.S[1]
+S0[2] <= decodificador:decode0.S[2]
+S0[3] <= decodificador:decode0.S[3]
+S0[4] <= decodificador:decode0.S[4]
+S0[5] <= decodificador:decode0.S[5]
+S0[6] <= decodificador:decode0.S[6]
+S1[0] <= decodificador:decode1.S[0]
+S1[1] <= decodificador:decode1.S[1]
+S1[2] <= decodificador:decode1.S[2]
+S1[3] <= decodificador:decode1.S[3]
+S1[4] <= decodificador:decode1.S[4]
+S1[5] <= decodificador:decode1.S[5]
+S1[6] <= decodificador:decode1.S[6]
+
+
+|circuito|decodificador:decode0
+A[0] => Mux0.IN19
+A[0] => Mux1.IN19
+A[0] => Mux2.IN19
+A[0] => Mux3.IN19
+A[0] => Mux4.IN19
+A[0] => Mux5.IN19
+A[0] => Mux6.IN19
+A[1] => Mux0.IN18
+A[1] => Mux1.IN18
+A[1] => Mux2.IN18
+A[1] => Mux3.IN18
+A[1] => Mux4.IN18
+A[1] => Mux5.IN18
+A[1] => Mux6.IN18
+A[2] => Mux0.IN17
+A[2] => Mux1.IN17
+A[2] => Mux2.IN17
+A[2] => Mux3.IN17
+A[2] => Mux4.IN17
+A[2] => Mux5.IN17
+A[2] => Mux6.IN17
+A[3] => Mux0.IN16
+A[3] => Mux1.IN16
+A[3] => Mux2.IN16
+A[3] => Mux3.IN16
+A[3] => Mux4.IN16
+A[3] => Mux5.IN16
+A[3] => Mux6.IN16
+S[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|decodificador:decode1
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19

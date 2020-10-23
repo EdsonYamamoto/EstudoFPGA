@@ -1,5 +1,5 @@
 Analysis & Synthesis report for decodificador
-Thu Sep 24 20:39:34 2020
+Thu Sep 24 23:59:44 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 24 20:39:34 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 24 23:59:44 2020       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; decodificador                               ;
-; Top-level Entity Name              ; decodificador                               ;
+; Top-level Entity Name              ; circuito                                    ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 7                                           ;
-;     Total combinational functions  ; 7                                           ;
+; Total logic elements               ; 14                                          ;
+;     Total combinational functions  ; 14                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 11                                          ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; decodificador      ; decodificador      ;
+; Device                                                                     ; EP4CGX150DF31C7    ;                    ;
+; Top-level entity name                                                      ; circuito           ; decodificador      ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,13 +166,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; decodificador.vhd                ; yes             ; User VHDL File  ; C:/labFacens/Quartus/2Decodificador/decodificador.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; decodificador.vhd                ; yes             ; User VHDL File        ; C:/labFacens/Quartus/2Decodificador/decodificador.vhd ;         ;
+; circuito.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/labFacens/Quartus/2Decodificador/circuito.vhd      ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -179,22 +181,24 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 11               ;
+; I/O pins                 ; 22               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; A[0]~input       ;
+; Maximum fan-out node     ; A0[0]~input      ;
 ; Maximum fan-out          ; 7                ;
-; Total fan-out            ; 46               ;
+; Total fan-out            ; 92               ;
 ; Average fan-out          ; 1.59             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |decodificador             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; |decodificador      ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
+; |circuito                  ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 22   ; 0            ; |circuito                       ; work         ;
+;    |decodificador:decode0| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |circuito|decodificador:decode0 ; work         ;
+;    |decodificador:decode1| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |circuito|decodificador:decode1 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,23 +232,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Sep 24 20:39:32 2020
+    Info: Processing started: Thu Sep 24 23:59:42 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decodificador -c decodificador
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
     Info (12022): Found design unit 1: decodificador-main
     Info (12023): Found entity 1: decodificador
-Info (12127): Elaborating entity "decodificador" for the top level hierarchy
+Warning (12125): Using design file circuito.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: circuito-main
+    Info (12023): Found entity 1: circuito
+Info (12127): Elaborating entity "circuito" for the top level hierarchy
+Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:decode0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 7 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Thu Sep 24 20:39:34 2020
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 14 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Thu Sep 24 23:59:44 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for decodificador
-Thu Sep 24 20:39:47 2020
+Fri Sep 25 00:00:05 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Sep 24 20:39:47 2020 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 25 00:00:05 2020 ;
 ; Revision Name             ; decodificador                         ;
-; Top-level Entity Name     ; decodificador                         ;
+; Top-level Entity Name     ; circuito                              ;
 ; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -71,12 +71,12 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------------+
 ; Generated Files                                                                                  ;
 +--------------------------------------------------------------------------------------------------+
-; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_6_1200mv_85c_slow.vho      ;
-; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_6_1200mv_0c_slow.vho       ;
+; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_7_1200mv_85c_slow.vho      ;
+; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_7_1200mv_0c_slow.vho       ;
 ; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_min_1200mv_0c_fast.vho     ;
 ; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador.vho                        ;
-; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_6_1200mv_0c_vhd_slow.sdo   ;
+; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_7_1200mv_85c_vhd_slow.sdo  ;
+; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_7_1200mv_0c_vhd_slow.sdo   ;
 ; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_min_1200mv_0c_vhd_fast.sdo ;
 ; C:/labFacens/Quartus/2Decodificador/simulation/modelsim/decodificador_vhd.sdo                    ;
 +--------------------------------------------------------------------------------------------------+
@@ -88,19 +88,19 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Sep 24 20:39:46 2020
+    Info: Processing started: Fri Sep 25 00:00:04 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off decodificador -c decodificador
-Info (204019): Generated file decodificador_6_1200mv_85c_slow.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file decodificador_6_1200mv_0c_slow.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file decodificador_7_1200mv_85c_slow.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file decodificador_7_1200mv_0c_slow.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file decodificador_min_1200mv_0c_fast.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file decodificador.vho in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file decodificador_6_1200mv_85c_vhd_slow.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file decodificador_6_1200mv_0c_vhd_slow.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file decodificador_7_1200mv_85c_vhd_slow.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file decodificador_7_1200mv_0c_vhd_slow.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file decodificador_min_1200mv_0c_vhd_fast.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file decodificador_vhd.sdo in folder "C:/labFacens/Quartus/2Decodificador/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4610 megabytes
-    Info: Processing ended: Thu Sep 24 20:39:47 2020
+    Info: Peak virtual memory: 4632 megabytes
+    Info: Processing ended: Fri Sep 25 00:00:05 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

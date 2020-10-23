@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Sep 24 20:39:34 2020
+Analysis & Synthesis Status : Successful - Thu Sep 24 23:59:44 2020
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : decodificador
-Top-level Entity Name : decodificador
+Top-level Entity Name : circuito
 Family : Cyclone IV GX
-Total logic elements : 7
-    Total combinational functions : 7
+Total logic elements : 14
+    Total combinational functions : 14
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 11
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

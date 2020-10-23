@@ -1,5 +1,5 @@
 Flow report for decodificador
-Thu Sep 24 20:39:47 2020
+Fri Sep 25 00:00:05 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,26 +40,26 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 24 20:39:47 2020       ;
+; Flow Status                        ; Successful - Fri Sep 25 00:00:05 2020       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; decodificador                               ;
-; Top-level Entity Name              ; decodificador                               ;
+; Top-level Entity Name              ; circuito                                    ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 7 / 14,400 ( < 1 % )                        ;
-;     Total combinational functions  ; 7 / 14,400 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 11 / 81 ( 14 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 552,960 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                               ;
-; Total PLLs                         ; 0 / 3 ( 0 % )                               ;
-; Device                             ; EP4CGX15BF14C6                              ;
+; Device                             ; EP4CGX150DF31C7                             ;
 ; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 14 / 149,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 14 / 149,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 0 / 149,760 ( 0 % )                         ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 22 / 508 ( 4 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/24/2020 20:39:33 ;
+; Start date & time ; 09/24/2020 23:59:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; decodificador       ;
 +-------------------+---------------------+
@@ -79,13 +79,16 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 269058763664307.160099077215044 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 269058763664307.160100278219076 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; circuito    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; circuito    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; circuito    ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; circuito                        ; decodificador ; --          ; --             ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -94,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4767 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 5914 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4608 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4785 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4598 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4766 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:12     ; 2.7                     ; 6192 MB             ; 00:00:21                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 4611 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4857 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4620 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:25                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

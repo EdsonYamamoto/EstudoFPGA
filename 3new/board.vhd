@@ -26,7 +26,7 @@ architecture main of board is
 	
 	signal counter_output : std_logic_vector(3 downto 0);
 	signal counter_enable : std_logic;
-	signal clock_div_counter : integer range 0 to 50000000;
+	signal clock_div_counter : integer range 0 to 5000;
 	
 begin
 	bcd_counter : counter port map (clock => clock, reset => reset, enable => counter_enable, output => counter_output);
@@ -36,7 +36,7 @@ begin
 		if reset = '0' then
 		clock_div_counter <=0;
 		elsif(clock ' event and clock = '1') then
-			if clock_div_counter = 50000000 then
+			if clock_div_counter = 5000 then
 				clock_div_counter <= 0;
 				counter_enable <= '1';
 			else

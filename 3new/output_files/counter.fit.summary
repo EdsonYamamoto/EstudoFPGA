@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Oct 22 20:47:58 2020
+Fitter Status : Successful - Thu Oct 22 21:46:50 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 Revision Name : counter
 Top-level Entity Name : board
 Family : Cyclone IV GX
 Device : EP4CGX150DF31C7
 Timing Models : Final
-Total logic elements : 59 / 149,760 ( < 1 % )
-    Total combinational functions : 59 / 149,760 ( < 1 % )
-    Dedicated logic registers : 31 / 149,760 ( < 1 % )
-Total registers : 31
+Total logic elements : 35 / 149,760 ( < 1 % )
+    Total combinational functions : 34 / 149,760 ( < 1 % )
+    Dedicated logic registers : 18 / 149,760 ( < 1 % )
+Total registers : 18
 Total pins : 10 / 508 ( 2 % )
 Total virtual pins : 0
 Total memory bits : 0 / 6,635,520 ( 0 % )

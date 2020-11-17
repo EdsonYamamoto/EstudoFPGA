@@ -1,5 +1,5 @@
 Analysis & Synthesis report for counter
-Thu Oct 22 20:47:41 2020
+Thu Oct 22 21:50:32 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,24 +37,24 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 22 20:47:41 2020           ;
+; Analysis & Synthesis Status        ; Failed - Thu Oct 22 21:50:32 2020               ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
 ; Revision Name                      ; counter                                         ;
 ; Top-level Entity Name              ; board                                           ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 59                                              ;
-;     Total combinational functions  ; 59                                              ;
-;     Dedicated logic registers      ; 31                                              ;
-; Total registers                    ; 31                                              ;
-; Total pins                         ; 10                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total GXB Receiver Channel PCS     ; 0                                               ;
-; Total GXB Receiver Channel PMA     ; 0                                               ;
-; Total GXB Transmitter Channel PCS  ; 0                                               ;
-; Total GXB Transmitter Channel PMA  ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -159,96 +153,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                 ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path          ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
-; counter.vhd                      ; yes             ; User VHDL File  ; C:/labFacens/Quartus/3new/counter.vhd ;         ;
-; board.vhd                        ; yes             ; User VHDL File  ; C:/labFacens/Quartus/3new/board.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------+---------+
-
-
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 10               ;
-;                          ;                  ;
-; DSP block 9-bit elements ; 0                ;
-;                          ;                  ;
-; Maximum fan-out node     ; clock~input      ;
-; Maximum fan-out          ; 31               ;
-; Total fan-out            ; 257              ;
-; Average fan-out          ; 2.34             ;
-+--------------------------+------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
-; |board                     ; 59 (55)             ; 31 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 10   ; 0            ; |board                     ; board       ; work         ;
-;    |counter:bcd_counter|   ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |board|counter:bcd_counter ; counter     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 31    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 30    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 31                          ;
-;     CLR               ; 30                          ;
-;     ENA               ; 1                           ;
-; cycloneiii_lcell_comb ; 60                          ;
-;     arith             ; 28                          ;
-;         2 data inputs ; 27                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 32                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 14                          ;
-;         4 data inputs ; 15                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.33                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -257,7 +166,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
-    Info: Processing started: Thu Oct 22 20:47:32 2020
+    Info: Processing started: Thu Oct 22 21:50:24 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter -c counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -267,22 +176,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
 Info (12021): Found 2 design units, including 1 entities, in source file board.vhd
     Info (12022): Found design unit 1: board-main File: C:/labFacens/Quartus/3new/board.vhd Line: 16
     Info (12023): Found entity 1: board File: C:/labFacens/Quartus/3new/board.vhd Line: 6
-Info (12127): Elaborating entity "board" for the top level hierarchy
-Info (12128): Elaborating entity "counter" for hierarchy "counter:bcd_counter" File: C:/labFacens/Quartus/3new/board.vhd Line: 32
-Warning (10492): VHDL Process Statement warning at counter.vhd(24): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/labFacens/Quartus/3new/counter.vhd Line: 24
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "enable" File: C:/labFacens/Quartus/3new/board.vhd Line: 10
-Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4904 megabytes
-    Info: Processing ended: Thu Oct 22 20:47:41 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:16
+Error (10349): VHDL Association List error at board.vhd(32): formal "counter_enable" does not exist File: C:/labFacens/Quartus/3new/board.vhd Line: 32
+Error (10346): VHDL error at board.vhd(32): formal port or parameter "enable" must have actual or default value File: C:/labFacens/Quartus/3new/board.vhd Line: 32
+Error (10784): HDL error at board.vhd(21): see declaration for object "enable" File: C:/labFacens/Quartus/3new/board.vhd Line: 21
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 4840 megabytes
+    Error: Processing ended: Thu Oct 22 21:50:32 2020
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:16
 
 
